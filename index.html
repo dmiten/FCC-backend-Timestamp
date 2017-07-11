@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Timestamp Microservice</title>
+  </head>
+  <body>
+    <div>
+      <h1>Timestamp Microservice</h1>
+      <p>dmiten | <a href="https://github.com/dmiten/FCC-backend-Timestamp" target="blank">GitHub</a></p>
+      <blockquote>
+        <b><i>User Stories:</i></b>
+        <ol>
+          <li>
+            I can pass a string<sup>*</sup> as a parameter, and it will check to see whether that string contains either a unix
+            timestamp or a natural language date (example: January 1, 2017)
+          </li>
+          <li>
+            If it does, it returns both the Unix timestamp and the natural language form of that date.
+          </li>
+          <li>
+            If it does not contain a date or Unix timestamp, it returns <code>null</code> for those
+            properties.
+          </li>
+        </ol>
+        <i>* - in a variant of ISO8601 or RFC2822 formats.</i>
+      </blockquote>
+      <h2>Example usage:</h2>
+      <a href="https://rebel-turnover.glitch.me/December%2015,%202015" target="blank">
+        <code>https://rebel-turnover.glitch.me/December%2015,%202015</code>
+      </a><br>
+      <a href="https://rebel-turnover.glitch.me/1450137600" target="blank">
+        <code>https://rebel-turnover.glitch.me/1450137600</code>
+      </a>
+      <h2>Example output:</h2>
+      <code>{ "unix": 1450137600, "natural": "December 15, 2015" }</code><br>
+      <code>{ "unix": null, "natural": null }</code>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "fcc-backend-timestamp",
+  "version": "1.0.0",
+  "description": "Test tasks for FCC",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Dmitry Tenitskiy",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "moment": "^2.18.1"
+  }
+}
