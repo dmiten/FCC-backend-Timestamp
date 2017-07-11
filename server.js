@@ -1,24 +1,24 @@
-var server = require('express');
-var moment = require('moment');
-var fs = require('fs');
-var path = require('path');
+var server = require("express");
+var moment = require("moment");
+var fs = require("fs");
+var path = require("path");
 
 var app = server();
-var port = process.env.PORT || 3001;
+var port = process.env.PORT || 8080;
 
 app.listen(port, () => {
   console.log("Listening on port: " + port)
 });
 
-app.get('/', (req, res) => {
-  var fileName = path.join(__dirname, 'index.html');
+app.get("/", (req, res) => {
+  var fileName = path.join(__dirname, "index.html");
   res.sendFile(fileName, (err) => {
     if (err) {
       console.log(err);
       res.status(err.status).end()
     }
     else {
-      console.log('Sent:', fileName)
+      console.log("Sent:", fileName)
     }
   })
 });
